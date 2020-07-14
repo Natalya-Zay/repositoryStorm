@@ -1,3 +1,5 @@
+package com.github.NatalyaZay;
+
 public class ProgramTask35 {
     public static void main(String[] args) {
         float a = 1245.554F; // 4 байта (3.4e-38; 3.4e+38)

@@ -1,3 +1,5 @@
+package com.github.NatalyaZay;
+
 public class ProgramTask38 {
     public static void main(String[] args) {
          // 123/2 = 61 (1)

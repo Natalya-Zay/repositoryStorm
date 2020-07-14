@@ -1,3 +1,5 @@
+package com.github.NatalyaZay;
+
 public class ProgramTask32 {
     public static void main(String[] args) {
         short a = -32768; // 2 байта ; значений (-32768;32767);
