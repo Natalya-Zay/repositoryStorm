@@ -1,3 +1,5 @@
+package com.github.NatalyaZay;
+
 public class ProgramTask36 {
     public static void main(String[] args) {
         char a = '+';                     // 2 байта ; (0;65535);

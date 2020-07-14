@@ -1,3 +1,5 @@
+package com.github.NatalyaZay;
+
 public class ProgramTask39 {
     public static class Dog { // любой класс это ссылочный тип
         String name; // ссылочная переменная представляет способ получения объекта
