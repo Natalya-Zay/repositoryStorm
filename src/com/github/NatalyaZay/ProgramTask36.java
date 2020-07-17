@@ -10,7 +10,7 @@ public class ProgramTask36 {
         System.out.println(c);
 
         System.out.println("ProgramTask37");
-   // правильно скомпилируются : b ; e; h; j; i; f; a
+   // правильно скомпилируются : b ; e; h; j; i; f; a,
 
 
 
