@@ -5,20 +5,23 @@ public class ProgramTask53 {
         int a = 34;
         int b = 2;
         int c = 78;
+        int result = 0;
 
          if (a > b && a > c ){
-            System.out.println(" max count : " + a );
+             result = a;
         } else if (b > c && b > a) {
-            System.out.println(" max count : " + b);
+             result = b;
         } else if (c > a && c > b) {
-            System.out.println(" max count : " + c);
+             result = c;
         }
+        System.out.println("max count: "+ result);
           if (a < b && a < c ) {
-            System.out.println(" min count : " + a);
+              result = a;
         }  else if (b < c && b < a) {
-            System.out.println(" min count : " + b);
+              result = b;
         } else if (c < a && c < b) {
-            System.out.println(" min count : " + c);
+              result = c;
         }
+        System.out.println("min count: "+ result);
     }
 }

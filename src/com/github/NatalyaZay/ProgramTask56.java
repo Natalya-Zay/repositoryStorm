@@ -30,8 +30,6 @@ public class ProgramTask56 {
             default:
                 System.out.println(" Такого месяца не существует ");
                 break;
-
-
         }
     }
 }

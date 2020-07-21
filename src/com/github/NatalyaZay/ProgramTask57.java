@@ -33,9 +33,6 @@ public class ProgramTask57 {
             default:
                 System.out.println(" Такого дня недели не сущетсвует ");
                    break;
-
-
-
         }
     }
 }
