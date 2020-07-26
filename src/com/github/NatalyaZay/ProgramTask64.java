@@ -12,7 +12,7 @@ public class ProgramTask64 {
 
         int[] array1 = new int[]{2, 4, 6, 8, 10};
         swap(array1, 2, 3);
-        swap(array1, 5, 3);
+        swap(array1, 3, 5);
         swap(array1, -2, 0);
     }
 
