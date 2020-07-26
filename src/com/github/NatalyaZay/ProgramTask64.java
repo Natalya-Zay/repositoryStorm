@@ -12,7 +12,7 @@ public class ProgramTask64 {
 
         int[] array1 = new int[]{2, 4, 6, 8, 10};
         swap(array1, 2, 3);
-        swap(array1, 5, 3);
+        swap(array1, 3, 5);
         swap(array1, -2, 0);
     }
 
@@ -20,23 +20,14 @@ public class ProgramTask64 {
         System.out.println("Trying swap: " + Arrays.toString(array) + " indexA " + indexA + " and " + indexB);
 
                         for (int i = 0; i < 1; i++) {
-                            if (indexA >= array.length ) {
+                            if (indexA >= array.length || indexA < 0 ) {
                                 System.out.println(" indexA " + indexA + " and " + indexB + " Neverni ! ");
                                 System.out.println(" indexA " + indexA);
 
-                            } else if (indexB >= array.length){
+                            } else if (indexB >= array.length || indexB < 0) {
                                 System.out.println(" indexA " + indexA + " and " + indexB + " Neverni ! ");
                                 System.out.println(" indexB " + indexB);
-                            }
-                            else  if (indexA < 0 ) {
-                                System.out.println(" indexA " + indexA + " and " + indexB + " Neverni ! ");
-                                System.out.println(" indexA " + indexA);
-                                }
-                            else if (indexB < 0){
-                                System.out.println(" indexA " + indexA + " and " + indexB + " Neverni ! ");
-                                System.out.println(" indexB " + indexB);
-                            }
-                             else{
+                            } else{
                                     int arr = array[indexA];
                                     array[indexA] = array[indexB];
                                     array[indexB] = arr;
