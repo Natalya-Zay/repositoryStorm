@@ -2,7 +2,7 @@ package com.github.NatalyaZay;
 
 import java.util.Scanner;
 
-         public class ProgramTask72 {
+public class ProgramTask72 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -16,5 +16,5 @@ import java.util.Scanner;
             }
           System.out.println(a);
         }
-            }
-         }
+    }
+}
