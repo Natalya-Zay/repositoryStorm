@@ -9,6 +9,7 @@ public class ProgramTask77 {
       int difference = born-death;
       for (int i = 1; i <= 10; i++){
          s = ( people / 1000) * difference * i;
+         s = people + s;
       }
         System.out.println(s);
     }
