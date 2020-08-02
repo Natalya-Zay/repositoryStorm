@@ -1,43 +1,42 @@
 package com.github.NatalyaZay;
 
+import java.util.Arrays;
+
 public class ProgramTask83 {
     public static void main(String[] args) {
-        multip(5);
-        multip(8, 9);
-        multip(2.5, 10);
-        multip(3.8, 7.2);
-        int[] array1 = {1, 2, 3, 4, 5};
-        multip(array1);
+        System.out.println( multip(5));
+        System.out.println(multip(8, 9));
+        System.out.println( multip(2.5, 10));
+        System.out.println(multip(3.8, 7.2));
+        int[] array1 = {2,3,4};
+        System.out.println(multip(array1));
     }
 
-    public static void multip(int a) {
-        int a1 = 2;
-        System.out.println(a1 * a);
+    public static int multip(int a) {
+        return 2 * a;
     }
 
-    public static void multip(int a, int b) {
-        int a1 = 3;
-        System.out.println(a1 * a * b);
+    public static int multip(int a, int b) {
+        return 3 * a * b;
     }
 
-    public static void multip(double a, int b) {
-        int a1 = 4;
-        System.out.println(a1 * a * b);
+    public static int multip(double a, int b) {
+        return (int) (4 * a * b);
     }
 
-    public static void multip(double a, double b) {
-        int a1 = 5;
-        System.out.println(a1 * a * b);
+    public static double multip(double a, double b) {
+        return  5 * a * b;
     }
 
-    public static void multip(int[] array) {
+    public static int multip(int[] array) {
+        int count = 1;
         for (int i = 0; i < array.length; i++) {
-            int k = array[i];
-            array[i] = array[i] * 20;
-            System.out.print(array[i] + " ");
+           count *= array[i];
+            }
+         return count;
         }
     }
-}
+
 /*
 1. Перегрузка (overloading) - это методы с одинаковыми названиями , но  с разными параметрами. Код в методе тоже может изменяться.
 Return type может быть одинаковый или разный.
