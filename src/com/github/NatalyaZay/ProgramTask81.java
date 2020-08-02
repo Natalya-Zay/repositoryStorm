@@ -10,16 +10,14 @@ public class ProgramTask81 {
 
     public static void count() {
         for (int i = 1; i <= 20; i++) {
-            if (i % 2 != 0) {
+            if (i % 2 != 0 ) {
                 System.out.print(i + " ");
+            } else
+                {
+                System.out.println(i);
             }
         }
-        System.out.print("    ");
-        for (int i = 1; i <= 20; i++) {
-            if (i % 2 == 0) {
-                System.out.print(i + " ");
-            }
-        }
+
         System.out.println();
     }
 
@@ -43,9 +41,9 @@ public class ProgramTask81 {
 
     public static void count(int a, int b, int c){
         if (a + b > c  &&  c + a > b  &&  c + b > a){
-            System.out.println("Треугольник возможен");
+            System.out.println ("Треугольник возможен");
         } else {
-            System.out.println("Треугольник NE возможен");
+            System.out.println ("Треугольник NE возможен");
         }
     }
 }
