@@ -41,9 +41,9 @@ public class ProgramTask81 {
 
     public static void count(int a, int b, int c){
         if (a + b > c  &&  c + a > b  &&  c + b > a){
-            System.out.println("Треугольник возможен");
+            System.out.println ("Треугольник возможен");
         } else {
-            System.out.println("Треугольник NE возможен");
+            System.out.println ("Треугольник NE возможен");
         }
     }
 }

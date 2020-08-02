@@ -12,7 +12,7 @@ public class ProgramTask82 {
     }
 
     public static String countBigZeroSecond(int a){
-        if (countBigZeroFirst(a)){
+        if (countBigZeroFirst(a)) {
             return "Число больше нуля";
         }else {
             return "Число не больше нуля или равно нулю";

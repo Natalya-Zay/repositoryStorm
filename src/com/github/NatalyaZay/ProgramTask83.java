@@ -29,7 +29,7 @@ public class ProgramTask83 {
     }
 
     public static int multip(int[] array) {
-        int count = 1;
+        int count = 1 ;
         for (int i = 0; i < array.length; i++) {
            count *= array[i];
             }
