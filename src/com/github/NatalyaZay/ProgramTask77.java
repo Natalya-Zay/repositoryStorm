@@ -3,7 +3,6 @@ package com.github.NatalyaZay;
 public class ProgramTask77 {
     public static void main(String[] args) {
       int people = 10000000;
-      int s = 0;
       int born = 14;
       int death = 8;
       int difference = born-death;
