@@ -5,7 +5,7 @@ public class ProgramTask93 {
 
         String st = "ази";
         String st2 = "мут";
-        System.out.println(st+st2);
+        System.out.println(st + st2);
         System.out.println(st.concat(st2));
     }
 }
