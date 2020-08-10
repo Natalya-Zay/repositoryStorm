@@ -63,8 +63,8 @@ public class MovieR {
                 for (int i = 0; i < movieBase.length; i++) {
                     if (movieBase[i].contains(movieContain)) {
                         System.out.println("contained in the database");
-                        break;
-                    } else {
+
+                    } else if (i==movieBase.length-1 && !movieBase[i].contains(movieContain)){
                         System.out.println("not contained in the database");
                     }
                 }
@@ -76,10 +76,10 @@ public class MovieR {
                     if (movieBase[i].contains(movieRemove)){
                         Arrays.sort(movieBase);
                         int key = Arrays.binarySearch(movieBase, movieRemove);
-                        String[] copy = new String[movieBase.length - 1];
-                        System.arraycopy(movieBase, 0, copy, 0, key);
-                        System.arraycopy(movieBase, key + 1, copy, key, movieBase.length - key - 1);
-                        System.out.println(Arrays.toString(copy));
+                       String[] copy = new String[movieBase.length - 1];
+                       System.arraycopy(movieBase, 0, copy, 0, key);
+                       System.arraycopy(movieBase, key + 1, copy, key, movieBase.length - key-1);
+                       System.out.println(Arrays.toString(movieBase));
                     }
                 }
             }
