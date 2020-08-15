@@ -66,7 +66,7 @@ public class MovieR {
                     String massage = "not contained in the database";
                     for (String str : movieBase) {
                         if (str.contains(movieContain)) {
-                            System.out.println("contained in the database");
+                           massage = "contained in the database";
                             break;
                         }
                     }
