@@ -16,78 +16,77 @@ public class MovieR {
                 "6. Delete movie\n" +
                 "7. Exit");
         Scanner scanner = new Scanner(System.in);
-
+        int post = 0;
         while (true) {
-            int size = 0;
             System.out.println("Enter command from menu: ");
             String command = scanner.nextLine();
 
-            if (command.equals("7")) {
-                break;
-            } else if (command.equals("1")) {
-                System.out.println("Enter movie title: ");
-                for (int i = 0; i < movieBase.length; i++) {
+            switch (command) {
+
+                case "7":
+                    System.out.println("Exit the program");
+                    return;
+
+                case "1":
+                    System.out.println("Enter movie title: ");
                     String movieAdd = scanner.nextLine();
-                    movieBase[size] = movieAdd;
-                    size++;
-                }
-            } else if (command.equals("2")) {
-                System.out.println("Sort alphabetically ");
-                for (int i = 0; i < movieBase.length; i++) {
+                    movieBase[post] = movieAdd;
+                    post++;
+                    break;
+
+                case "2":
+                    System.out.println("Sort alphabetically ");
                     Arrays.sort(movieBase);
-                    System.out.println(movieBase[i]);
-                }
-            } else if (command.equals("3")) {
-                System.out.println("What movie to edit ? ");
-                String movieReplace = scanner.nextLine();
-                System.out.println("What will be the changes ? ");
-                String movieEdit = scanner.nextLine();
+                    break;
 
-                for (int i = 0; i < movieBase.length; i++) {
-                    if (movieBase[i].contains(movieReplace)) {
-                        movieReplace = movieBase[i];
-                        movieBase[i] = movieEdit;
-                        movieEdit = movieReplace;
-                        System.out.println(Arrays.toString(movieBase));
-                        break;
+                case "3":
+                    System.out.println("What movie to edit ? ");
+                    String movieReplace = scanner.nextLine();
+                    System.out.println("What will be the changes ? ");
+                    String movieEdit = scanner.nextLine();
+                    for (int i = 0; i < movieBase.length; i++) {
+                        if (movieBase[i].contains(movieReplace)) {
+                            movieBase[i] = movieEdit;
+                            movieEdit = movieReplace;
+                            System.out.println(Arrays.toString(movieBase));
+                        }
                     }
-                }
-            } else if (command.equals("4")) {
-                System.out.println("All movies: ");
-                for (String s : movieBase) {
-                    System.out.println(s);
-                }
-            } else if (command.equals("5")) {
-                System.out.println("Which movie to check ?");
-                String movieContain = scanner.nextLine();
-                for (int i = 0; i < movieBase.length; i++) {
-                    if (movieBase[i].contains(movieContain)) {
-                        System.out.println("contained in the database");
+                    break;
 
-                    } else if (i==movieBase.length-1 && !movieBase[i].contains(movieContain)){
-                        System.out.println("not contained in the database");
+                case "4":
+                    System.out.println("All movies: ");
+                    for (String s : movieBase) {
+                        System.out.println(s);
                     }
-                }
-            } else if (command.equals("6")) {
-                System.out.println("Which movie to remove ? ");
-                String movieRemove = scanner.nextLine();
-                Arrays.sort(movieBase);
-                for (int i = 0; i < movieBase.length; i++) {
-                    if (movieBase[i].contains(movieRemove)){
-                        Arrays.sort(movieBase);
-                        int key = Arrays.binarySearch(movieBase, movieRemove);
-                       String[] copy = new String[movieBase.length - 1];
-                       System.arraycopy(movieBase, 0, copy, 0, key);
-                       System.arraycopy(movieBase, key + 1, copy, key, movieBase.length - key-1);
-                       System.out.println(Arrays.toString(movieBase));
+                    break;
+
+                case "5":
+                    System.out.println("Which movie to check ?");
+                    String movieContain = scanner.nextLine();
+                    String massage = "not contained in the database";
+                    for (String str : movieBase) {
+                        if (str.contains(movieContain)) {
+                            System.out.println("contained in the database");
+                            break;
+                        }
                     }
-                }
+                    System.out.println(massage);
+                    break;
+
+                case "6":
+                    System.out.println("Which movie to remove ? ");
+                    String movieRemove = scanner.nextLine();
+                    Arrays.sort(movieBase);
+                    int index = -1;
+                    for (int i = 0; i < movieBase.length; i++) {
+                        if (movieBase[i].contains(movieRemove)) {
+                            index = i;
+                            System.arraycopy(movieBase, index + 1, movieBase, index, movieBase.length - index - 1);
+                            movieBase = Arrays.copyOf(movieBase, movieBase.length - 1);
+                        }
+                    }
+                    break;
             }
-       }
+        }
     }
 }
-
-
-
-
-
