@@ -18,9 +18,9 @@ public class ProgramTask12 {
             this.age=age;
         }
 
-     public void meditation (){
+        public void meditation (){
          System.out.println("I think - it means I exist. "+ this.name + " "+ date);
-     }
+        }
 
         @Override
         public String toString() {
