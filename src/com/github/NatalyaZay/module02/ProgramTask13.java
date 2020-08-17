@@ -38,10 +38,10 @@ public class ProgramTask13 {
         String name;
         int age;
 
-      public Owner(String name,int age){
-          this.name = name;
-          this.age = age;
-      }
+        public Owner(String name,int age){
+            this.name = name;
+            this.age = age;
+        }
 
         @Override
         public String toString() {

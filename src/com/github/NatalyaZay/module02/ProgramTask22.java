@@ -10,9 +10,10 @@ public class ProgramTask22 {
     public static class Human{
         String name;
 
-    public Human(String name){
+        public Human(String name){
         this.name = name;
-    }
+        }
+
         @Override
         public int hashCode() {
         return 10 * name.hashCode() + 1;
