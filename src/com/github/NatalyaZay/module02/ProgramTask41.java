@@ -39,6 +39,5 @@ public class ProgramTask41 {
          pr.setAge(90);
          pr.setId(20);
          pr.setName("Aaaaaa");
-
      }
  }
