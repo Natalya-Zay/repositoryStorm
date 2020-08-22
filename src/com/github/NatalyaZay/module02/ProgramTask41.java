@@ -32,6 +32,7 @@ public class ProgramTask41 {
 }
  class Access {
      public static void main(String[] args) {
+
          ProgramTask41 pr = new ProgramTask41();
          pr.getName();
          pr.getAge();
