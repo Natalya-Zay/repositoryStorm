@@ -2,9 +2,11 @@ package com.github.NatalyaZay.module02;
 
 public class ProgramTask43 {
     public static void main(String[] args) {
+
        Lion lion = new Lion("Simba" );
-        System.out.println(lion.name);
-        lion.changeName(lion);
+       System.out.println(lion.name);
+       lion.changeName(lion);
+       System.out.println(lion.name);
     }
 }
 
@@ -18,7 +20,7 @@ class Lion {
 
   public void changeName (Lion lion){
 
-      Lion lionSecond = new Lion ("Mufasa");
-        System.out.println(lionSecond.name);
+        lion.name = "Mufasa";
+        System.out.println(lion.name);
     }
 }
