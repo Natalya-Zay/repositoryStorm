@@ -18,9 +18,8 @@ class Lion {
         this.name = name;
     }
 
-  public void changeName (Lion lion){
+  public static void changeName (Lion lion){
 
         lion.name = "Mufasa";
-        System.out.println(lion.name);
     }
 }
