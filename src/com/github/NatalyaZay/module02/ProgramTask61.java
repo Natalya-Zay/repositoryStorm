@@ -1,6 +1,7 @@
 package com.github.NatalyaZay.module02;
 
 public class ProgramTask61 {
+
     public static void main(String[] args) {
 
         House[] house = new House[8];
